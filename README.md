@@ -1,4 +1,4 @@
-#Gecko API
+# Gecko API
 
 Started in 2014, CoinGecko is the world’s largest independent crypto data aggregator that is integrated with more than 1,000 crypto exchanges and lists more than 18,000 coins across 600+ categories. CoinGecko API offers the most comprehensive and reliable crypto market data through RESTful JSON endpoints.
 
