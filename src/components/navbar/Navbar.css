@@ -1,0 +1,83 @@
+.nav-right button img {
+  width: 16px;         /* seta */
+  height: auto;        /* preserva proporção */
+  object-fit: contain;
+  margin-left: 6px;
+  vertical-align: middle;}
+.logo1 {
+  width: max(12vw, 120px);
+  height: auto;
+  display: flex;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #1e1e1e;
+  color: white; /* cor do texto */
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  cursor: pointer;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: max(1vw, 12px);
+}
+.navbar select {
+  background: transparent;
+  color: white; /* cor do texto */
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.navbar option {
+  background-color: #1e1e1e;
+  color: white; /* cor do texto */
+  display: flex;
+}
+.navbar button {
+  background: white;
+  border: none;
+  gap: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 5px 15px; /*o primeiro valor é o padding na vertical */
+  color: black; /* cor do texto */
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:900px) {
+  .navbar {
+    padding: 5px 8%;
+  }
+  .nav-right button {
+    gap: 8px;
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}
+@media (max-width:768px) {
+  .navbar {
+    padding: 2px 4%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar button img{
+    width: 12px;
+  }
+}

@@ -1,0 +1,61 @@
+.about{
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-card{
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: rgba(255,255,255,0.03);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+.about-content{
+  width: 100%;
+}
+.about-content h1{
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+.about-intro{
+  margin: 0 0 12px 0;
+  color: #ddd;
+  line-height: 1.5;
+}
+.about-list{
+  margin: 0 0 16px 0;
+  padding: 0;
+  list-style: none;
+  color: #ccc;
+}
+.about-list li{
+  margin-bottom: 6px;
+}
+.about-actions{
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.btn{
+  background: #fff;
+  color: #000;
+  padding: 8px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-secondary{
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* responsivo */
+@media (max-width:720px){
+  .about-card{ flex-direction: column; text-align: center; }
+  .about-actions{ justify-content: center; }
+}

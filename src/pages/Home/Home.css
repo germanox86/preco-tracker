@@ -1,0 +1,104 @@
+.home{
+    padding: 0px 20px;
+    padding-bottom: 100px;
+}
+.hero{
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.hero h1{
+    font-size: clamp(5vw, 360px);
+    font-weight: 700;
+    color: white;
+}
+.hero p{
+    width: 90%;
+    color: white;
+    line-height: 1.6;
+}
+.hero form{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.hero input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    flex: 1;
+    padding-left: 10px;
+}
+.hero button{
+    background-color: #780cca;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.tabela-crypto{
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+    width: 100%;
+    border-radius: 10px;
+}
+.tabela-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr; /*largura das colunas*/
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #780cca;
+    font-size: 13px;
+}
+.tabela-layout:last-child{
+    border: none;
+}
+.tabela-layout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tabela-layout div img{
+    width: 35px;
+    height: auto;
+}
+.tabela-layout .green{
+    color: #4caf50;
+    font-weight: 600;
+}
+.tabela-layout .red{
+    color: #f44336;
+    font-weight: 600;
+}
+@media (max-width:768px) {
+    .tabela-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr; /*largura das colunas*/
+        font-size: 13px;
+    }
+    .marketcap{
+        display: none;  
+    }
+}
+@media (max-width:500px) {
+    .tabela-layout div img{
+        width: 20px;
+    }
+    .tabela-layout{
+        font-size: 10px;
+    }
+    .hero form input{
+        width: 100px;
+    }
+}
